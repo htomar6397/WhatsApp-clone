@@ -1,0 +1,183 @@
+
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+   font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.side::-webkit-scrollbar{
+  display: none;
+}
+.chatbox::-webkit-scrollbar{
+ display: none;
+}
+.backimg::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-repeat: repeat; */
+  background-position: center;
+  opacity: 0.4;
+  height: inherit;
+  width: 100%;
+  background-image: url(C:\Users\Mayank\Desktop\whatsapp-clone\whatsapp-clone\src\bg-chat-tile-dark_a4be512e7195b6b733d9110b408f075d.png);
+}
+.Login::before{  position: absolute;
+    top: 127px; 
+    width: 100vw;
+    height:calc(100vh - 127px) ;
+    content: '';
+    background-image: linear-gradient(rgb(229,226,221),rgb(209,215,219));
+
+}
+.Login{
+   
+  
+    width: 100vw;
+    height: 127px;
+    background-color: rgb(0,167,131); 
+}
+button:hover{
+  filter: brightness(0.9);
+}
+.op::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  background-position: center;
+  background-image: url(C:\Users\Mayank\Desktop\whatsapp-clone\whatsapp-clone\src\back.png);
+}
+
+/* chatbanner */
+.chatbanner{
+    width: 450px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #3b4a54;
+    position: relative;
+}
+.chatbanner:hover{
+    background-color: #a7a8a95f;
+}
+.bannerimg{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-inline: 13px;
+   
+    /* object-fit: cover; */
+    border: 1px solid rgba(0, 0, 0, 0.091);
+    flex-shrink: 0;
+  
+}
+.bannerimg img{
+ object-position: center;
+  object-fit: cover;
+     height: 50px;
+     width: 50px;
+}
+.namewrap{ height: 72px;
+    width: 399px;
+     display: flex;
+     flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5px;
+      border-bottom: 1px solid rgba(99, 98, 98, 0.123);
+}
+.time{ justify-content: space-between;
+    height: 14px;
+    width: 373px;
+    display: flex;
+    align-items: center;
+    
+}
+.lasttime{
+    font-size: 12px;
+    margin-right:18px ;
+    color: #667781;
+}
+.name{
+    color: #111B21;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.lastmes{
+font-size: 14px;
+color: #667781;
+line-height: 20px;
+text-align: left;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 86%;
+overflow-x: hidden;
+
+}
+.input{
+    height: 48px;
+    width: 448px;
+    display: flex;
+    align-items: center;
+    
+   gap: 40px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(99, 98, 98, 0.123);
+    position: fixed;
+    background-color: #ffffff;
+}
+.input input{ margin-left: 12px;
+    outline-style: none;
+    border-radius: 5px;
+    border: none;
+    height: 31px;
+    width: 300px;
+    background-color: #F0F2F5;
+    padding-left: 30px;
+}
+.Alll,.log{
+     height: 30px;
+     width:30px;
+     cursor:pointer;
+     border-radius:50%;
+     padding:5px 3px 3px 5px; 
+     background-color: #0002;  
+}
+.Alll:hover,.log:hover{
+  background-color: #0003;
+}
+.EmojiPickerReact{
+  background-color: #F0F2F5 !important;
+}
+.epr-body::-webkit-scrollbar{
+width: 5px !important;
+}
+.epr-preview {
+   
+    display: none !important;
+}
+ .epr-header {
+    display: flex !important;
+    flex-direction:column-reverse !important ;
+    /* display: block !important; */
+}
+.epr-search{
+  background-color: #e9edef !important;
+}
